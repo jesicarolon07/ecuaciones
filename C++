@@ -1,0 +1,216 @@
+#include <iostream>
+#include <fstream>
+#include<stdlib.h>
+using namespace std;
+class ecuaciones {
+ float X,n1,n2,n3,n4,n5,n6,n7,n8,result;
+ int r2,r3,r4,r5,r6,r7;
+public:
+int x,resp;
+public:
+void ejercicio1();
+void ejercicio2();
+void ejercicio3();
+void ejercicio4();
+void ejercicio5();
+void ejercicio6();
+
+};
+
+void ecuaciones::ejercicio1(void){
+  cout << "ingrese un numero: ";cin>>n1;
+  cout << "ingrese otro numero: ";cin>>n2;
+  cout <<"-----------------------------"<<endl;
+  cout<<"x";cout<<"+";cout<<n1;cout<<"=";cout<<n2<<endl;
+  cout<<"x=";cout<<n2;cout<<"-";cout<<n1<<endl;//ecuacion
+  x = n2-n1;//resultado
+  cout<<x<<endl;
+  cout <<"-----------------------------"<<endl;
+  
+}
+
+
+void ecuaciones::ejercicio2(void){
+  cout << "ingrese el primer numero: ";cin>>n1;
+  cout << "ingrese el segundo numero: ";cin>>n2;
+  cout << "ingrese el tercer  numero: ";cin>>n3;
+  cout <<"-----------------------------"<<endl;
+  cout<<n1;cout<<"x+";cout<<n2;cout<<"=";cout<<n3<<endl;
+  cout<<n1;cout<<"x=";cout<<n3;cout<<"-";cout<<n2<<endl;//ecuacion
+         x= (n3-n2);//resolucion
+  cout<<"x=";cout<<x;cout<<"/";cout<<n1<<endl;
+  resp=x/n1;
+  cout <<"-----------------------------"<<endl;
+}
+
+
+void ecuaciones::ejercicio3(void){
+  cout << "ingrese el primer numero: ";cin>>n1;
+  cout << "ingrese el segundo numero: ";cin>>n2;
+  cout << "ingrese el tercer  numero: ";cin>>n3;
+  cout << "ingrese el cuarto  numero: ";cin>>n4;
+  cout <<"-----------------------------"<<endl;
+cout<<n1;cout<<"x+";cout<<n2;cout<<"=";cout<<n3;cout<<"x+";cout<<n4<<endl;
+      cout<<n1;cout<<"x-";cout<<n3;cout<<"x=";cout<<n4;cout<<"-";cout<<n2<<endl;
+      x=(n1-n3);
+      X= (n4-n2);
+      cout<<x;cout<<"x=";cout<<X<<endl;
+      resp = (X/x);
+      cout<<"x=";cout<<X;cout<<"/";cout<<x<<endl;
+      cout <<"-----------------------------"<<endl;
+}
+
+
+void ecuaciones::ejercicio4(void){
+  cout << "ingrese el primer numero: ";cin>>n1;
+        cout << "ingrese el segundo numero: ";cin>>n2;
+        cout << "ingrese el tercer  numero: ";cin>>n3;
+        cout << "ingrese el tercer  numero: ";cin>>n4;
+        cout <<"-----------------------------"<<endl;
+        cout<<"-";cout<<n1;cout<<"x+";cout<<n2;cout<<"=";cout<<n3;cout<<"x+";cout<<n4<<endl;
+        
+        cout<<"-";cout<<n1;cout<<"x";cout<<"-";cout<<n3;cout<<"x=";cout<<n4;cout<<"-";cout<<n2<<endl;
+      x=(-n1-n3);
+      X=(n4-n2);
+      cout<<x;cout<<"x=";cout<<X<<endl;
+      resp=(X/x);
+      cout<<"x=";cout<<X;cout<<"/";cout<<x<<endl;
+      cout <<"-----------------------------"<<endl;
+}
+
+
+void ecuaciones::ejercicio5(void){
+   cout << "ejercicio de nivel 2: "<<endl;
+        cout << "ingrese el primer numero: ";cin>>n1;
+        cout << "ingrese el segundo numero: ";cin>>n2;
+        cout << "ingrese el tercer  numero: ";cin>>n3;
+        cout << "ingrese el cuarto numero: ";cin>>n4;
+        cout << "ingrese el quinto numero: ";cin>>n5;
+        cout << "ingrese el sexto  numero: ";cin>>n6;
+        cout <<"-----------------------------"<<endl;
+        cout<<"     ";cout<<"-";cout<<n1;cout<<"x+";cout<<n2;cout<<" ";cout<<"= ";cout<<n4;cout<<"x+";cout<<n5<<endl;
+        
+        cout<<"     ";cout<<"------  -----"<<endl;
+        cout<<"       ";cout<<n3;
+        cout<<"       ";cout<<n6<<endl;
+
+        cout<<"(";cout<<"-";cout<<n1;cout<<"x+";cout<<n2;cout<<")*";cout<<n6;cout<<" ";cout<<"= ";cout<<"(";cout<<n4;cout<<"x+";cout<<n5;cout<<")";cout<<"*";cout<<n3<<endl;
+       
+        result = (-n1*n6);
+        r2 = (n2*n6);
+        r3 = (n4*n3);
+        r4 = (n5*n3);
+        r5 = (result-r3);
+        r6 = (r4-r2);
+        
+cout<<result;cout<<"x+";cout<<r2;cout<<"=";cout<<r3;cout<<"x";cout<<"+";cout<<r4<<endl;
+              cout<<result;cout<<"x-";cout<<r3;cout<<"x";cout<<"=";cout<<r4;cout<<"-";cout<<r2<<endl;
+        cout<<r5;cout<<"x=";cout<<r6<<endl;
+        cout<<"x=";cout<<r6;cout<<"/";cout<<r5<<endl;
+   cout <<"-----------------------------"<<endl;
+}
+
+
+void ecuaciones::ejercicio6(void){
+   cout << "ejercicio de nivel 3 : "<<endl;
+        cout << "ingrese el primer numero: ";cin>>n1;
+        cout << "ingrese el segundo numero: ";cin>>n2;
+        cout << "ingrese el tercer  numero: ";cin>>n3;
+        cout << "ingrese el cuarto numero: ";cin>>n4;
+        cout << "ingrese el quinto numero: ";cin>>n5;
+        cout << "ingrese el sexto  numero: ";cin>>n6;
+        cout << "ingrese el septimo numero: ";cin>>n7;
+        cout << "ingrese el octavo  numero: ";cin>>n8;
+        cout <<"-----------------------------"<<endl;
+        
+       cout<<"     ";cout<<n1;cout<<"x+";cout<<n2;cout<<"     ";
+      cout<<"    ";cout<<n4;cout<<"x+";cout<<n5<<endl;
+        
+       cout<<"      ";cout<<"----  ";cout<<"+ ";cout<<n7;cout<<"  = ----  ";cout<<"- ";cout<<n8<<endl;
+        cout<<"       ";cout<<n3;
+        cout<<"            ";cout<<n6<<endl;
+  
+
+cout<<" "<<endl;
+  
+         cout<<"     ";cout<<n1;cout<<"x+";cout<<n2;cout<<" ";cout<<"= ";cout<<n4;cout<<"x+";cout<<n5<<endl;
+        
+        cout<<"    ";cout<<"------  -----";cout<<" ";cout<<"-";cout<<n8;cout<<"-";cout<<n7<<endl;
+        cout<<"      ";cout<<n3;
+        cout<<"      ";cout<<n6<<endl;
+        r7 = (-n8-n7);
+         cout<<"     ";cout<<n1;cout<<"x+";cout<<n2;cout<<" ";cout<<"= ";cout<<n4;cout<<"x+";cout<<n5<<endl;
+        
+        cout<<"    ";cout<<"------  -----";cout<<" ";cout<<r7<<endl;
+        cout<<"      ";cout<<n3;
+        cout<<"      ";cout<<n6<<endl;
+        int r8,r9,r10;
+        r8 =(n6*r7);
+        r9 =(n5-r8);
+ cout<<"     ";cout<<n1;cout<<"x+";cout<<n2;cout<<" ";cout<<"= ";cout<<n4;cout<<"x+";cout<<n5;cout<<"-";cout<<"(";cout<<r8;cout<<")"<<endl;
+        
+        cout<<"    ";cout<<"------  -----";cout<<" "<<endl;
+        cout<<"      ";cout<<n3;
+        cout<<"      ";cout<<n6<<endl;
+
+         cout<<"     ";cout<<n1;cout<<"x+";cout<<n2;cout<<" ";cout<<"= ";cout<<n4;cout<<"x+";cout<<r9<<endl;
+        cout<<"    ";cout<<"------  -----";cout<<" "<<endl;
+        cout<<"      ";cout<<n3;
+        cout<<"      ";cout<<n6<<endl;
+
+       cout<<"(";cout<<n1;cout<<"x+";cout<<n2;cout<<")*";cout<<n6;cout<<" ";cout<<"= ";cout<<"(";cout<<n4;cout<<"x+";cout<<r9;cout<<"*";cout<<n3;cout<<")"<<endl;
+        result = (n1*n6);
+        r2 = (n2*n6);
+        r3 = (n4*n3);
+        r4 = (r9*n3);
+        r5 = (result-r3);
+        r6 = (r4-r2);
+        
+cout<<result;cout<<"x+";cout<<r2;cout<<"=";cout<<r3;cout<<"x";cout<<"+";cout<<r4<<endl;
+              cout<<result;cout<<"x-";cout<<r3;cout<<"x";cout<<"=";cout<<r4;cout<<"-";cout<<r2<<endl;
+        cout<<r5;cout<<"x=";cout<<r6<<endl;
+        cout<<"x=";cout<<r6;cout<<"/";cout<<r5<<endl;
+   cout <<"-----------------------------"<<endl;
+}
+
+int main(){ 
+  ecuaciones ecuacion;
+  int op=1;
+  do{
+    cout <<"___________MENU__________"<<endl;
+    cout <<" "<<endl;
+    cout << "1-Ejercicio de NIVEL 1"<<endl;
+    cout << "2-Ejercicio de NIVEL 1"<<endl;
+    cout << "3-Ejercicio de NIVEL 1"<<endl;
+    cout << "4-Ejercicio de NIVEL 1"<<endl;
+    cout << "5-Ejercicio de NIVEL 2"<<endl;
+    cout << "6-Ejercicio de NIVEL 3"<<endl;
+    cout << "7-Salir"<<endl;
+    cout<<" "<<endl;
+    cout << "Seleccione una Opcion: ";cin>>op;
+   switch(op){
+     case 1:
+     ecuacion.ejercicio1();
+     break;
+     case 2:
+     ecuacion.ejercicio2();
+     break;
+     case 3:
+     ecuacion.ejercicio3();
+     break;
+     case 4:
+     ecuacion.ejercicio4();
+     break;
+     case 5:
+     ecuacion.ejercicio5();
+     break;
+     case 6:
+     ecuacion.ejercicio6();
+     break;
+     case 7:
+     cout << "Gracias, Vuelva pronto";break;
+   } 
+    
+  }while(op<7);
+  return 0;
+}
